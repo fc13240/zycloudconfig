@@ -16,6 +16,7 @@ zuul:
     catalog-service: /catalog/**
     shopping-cart-service: /shoppingcart/**
     address-service: /address/**
+    user-admin-service: /useradmin/**
 security:
   oauth2:
     resource:
