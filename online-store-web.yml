@@ -42,6 +42,9 @@ zuul:
     auth-service:
       path: /user/**
       url: http://192.168.1.128:8181/uaa/user
+    app-api-service:
+      path: /appapi/**
+      url: http://192.168.1.128:9990
     user-service:
       path: /users/**
 security:
@@ -54,6 +57,7 @@ security:
       userAuthorizationUri: http://192.168.1.128:8181/uaa/oauth/authorize
       clientId: acme
       clientSecret: acmesecret
+  ignored: /assets/**
 eureka:
   instance:
     non-secure-port: 8787
