@@ -36,15 +36,12 @@ spring:
 zuul:
   ignored-services: '*'
   routes:
-    edge-service:
-      path: /api/**
-      url: http://192.168.1.128:9999
-    auth-service:
-      path: /user/**
-      url: http://192.168.1.128:8181/uaa/user
     app-api-service:
       path: /appapi/**
       url: http://192.168.1.128:9990
+    auth-service:
+      path: /user/**
+      url: http://192.168.1.128:8181/uaa/user
     user-service:
       path: /users/**
 security:
